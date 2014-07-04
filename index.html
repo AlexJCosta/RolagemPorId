@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript">
+  function rolagem(valor){
+  		window.location.hash = '#'+valor;
+  }
+</script>
+
+
+</head>
+<body>
+  	<div id="DivMenu" style="height:900px; background-color:#777;"></div>
+  	<div id="Div" style="height:500px; background-color:red;">
+  		<button id="button" onclick="rolagem('DivMenu');">CHAMAR DIV MENU</button>
+  		<button id="button" onclick="rolagem('DivFooter');">CHAMAR DIV FOOTER</button>
+  	</div>
+  	<div id="DivFooter" style="height:900px; background-color:#000;"></div>
+</body>
+</html>
